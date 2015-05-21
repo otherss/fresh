@@ -11,20 +11,13 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <style type="text/css">
-        #wrapper{
-          height: 100px;
-          clear: both;
-          overflow: hidden;
-        }
-  </style>
 </head>
 <body>
 <!-- Header -->
 <header data-am-widget="header" class="am-header am-header-default">
-  <h1 class="am-header-title">
-    <a href="#title-link">hello word</a>
-  </h1>
+		<div id="logo"><img src="img/logo.png"></div>
+		<div class="car"><a href="##"></a></div>
+		<div class="profile"><a href="##"></a></div>
 </header>
 
 <!-- Menu -->
@@ -34,46 +27,94 @@
     </a>
     <div class="am-offcanvas">
           <div class="am-offcanvas-bar">
+          		<div class="search">
+				     <bottom class="search_btn"></bottom>
+				     <input class="search_text" type="text"> 
+			    </div>
                 <ul class="am-menu-nav sm-block-grid-1">
-                    <li><a href="##">公司</a></li>
-                    <li><a href="##">人物</a></li>
-                    <li><a href="##">趋势</a></li>
-                    <li><a href="##">投融资</a></li>
-                    <li><a href="##">创业公司</a></li>
-                    <li><a href="##">创业人物</a></li>
-                    <li><a href="##">公司</a></li>
+                    <li><a href=""><img src="img/nav1.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav2.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav3.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav4.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav5.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav6.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav7.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav8.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav9.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav10.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav11.png" alt=""></a></li>
+                    <li><a href=""><img src="img/nav12.png" alt=""></a></li>
                 </ul>
           </div>
     </div>
 </nav>
 
-<div id="wrapper">
+<div class="index_bar"></div>
+
+<div class="index_wrap">
+	<div class="fl span1"><img src="img/bar2-1.png"></div>
+	<div class="fr span2">
+		 <img class="img1" src="img/bar2-2.png">
+		 <img src="img/bar2-3.png">
+	</div>
+</div>
+
+
+<!--<div id="wrapper">
     <ul>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
-        <li>111</li>
-        <li>222</li>
+        <li><a href="##"><img src="img/sub1.png"></a></li>
+        <li><a href="##"><img src="img/sub2.png"></a></li>
+        <li><a href="##"><img src="img/sub3.png"></a></li>
+        <li><a href="##"><img src="img/sub4.png"></a></li>
+        <li><a href="##"><img src="img/sub5.png"></a></li>
+        <li><a href="##"><img src="img/sub6.png"></a></li>
+        <li><a href="##"><img src="img/sub7.png"></a></li>
     </ul>
+</div>-->
+
+<div id="wrapper">
+	<div id="scroller">
+		<ul>
+			<li><a href="#"><img src="img/sub1.png"></a></li>
+			<li><a href="#"><img src="img/sub2.png"></a></li>
+			<li><a href="#"><img src="img/sub3.png"></a></li>
+			<li><a href="#"><img src="img/sub4.png"></a></li>
+			<li><a href="#"><img src="img/sub5.png"></a></li>
+			<li><a href="#"><img src="img/sub6.png"></a></li>
+			<li><a href="#"><img src="img/sub7.png"></a></li>
+			<li><a href="#"><img src="img/sub8.png"></a></li>
+			<li><a href="#"><img src="img/sub9.png"></a></li>
+			<li><a href="#"><img src="img/sub10.png"></a></li>
+			<li><a href="#"><img src="img/sub11.png"></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="index_wrap">
+	<div class="fl span2">
+		 <img class="img1" src="img/bar3-1.png">
+		 <img src="img/bar3-2.png">
+	</div>
+	<div class="fr span1"><img src="img/bar3-3.png"></div>
 </div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/amazeui.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/app.js"></script>
 <script type="text/javascript">
-    var IScroll = $.AMUI.iScroll;
-    var myScroll = new IScroll('#wrapper');
+$(function(){ 
 
+	
+
+})
+
+window.onload=function(){ 
+		var width=$('#scroller li').outerWidth()+0.4;
+		var length=$('#scroller li').length;
+		$('#scroller').width(width*length);
+		var myScroll = new IScroll('#wrapper', { scrollX: true, scrollY: false, mouseWheel: true });
+}
 </script>
 </body>
 </html>

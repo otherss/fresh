@@ -1,1 +1,68 @@
 /* Write your styles */
+body,html{ position: relative;}
+body{background:url(../img/body_bg.jpg) repeat 0 0; padding-bottom: 0.5rem;}
+img{ vertical-align:top;}
+.fl{ float: left;}
+.fr{ float: right;}
+.am-header{ height:0.8rem; background:#24272b; border-top:1px solid #1c1e21; border-bottom: 1px solid #1c1e21;}
+.am-menu{ width: 100%; height:0.8rem; left: 0px; top: 0px; position: absolute;}
+.am-menu-offcanvas1 .am-menu-toggle{ width: 0.36rem; height: 0.28rem; left: 0.4rem; top: 0.28rem; background:url(../img/toggle_btn.png) no-repeat 0 0; background-size: 100%;}
+
+#logo{ width: 1.14rem; height: 1.14rem; position: absolute; left: 2.63rem; top: 0.02rem;}
+#logo img{ width: 100%; vertical-align: top;}
+.car a{ display: block; width: .37rem; height: 0.34rem; position: absolute; left: 5.04rem; top: 0.27rem; background:url(../img/Cart.png) no-repeat 0 0; background-size: 100%;}
+.profile a{ display: block; width: .33rem; height: 0.35rem; position: absolute; left: 5.82rem; top: 0.28rem; background:url(../img/Profile.png) no-repeat 0 0; background-size: 100%;}
+
+.am-offcanvas-bar{ width: 3.8rem; background: rgba(0,0,0,0.5);}
+.search{ width: 100%; height: 0.82rem;}
+.search_text{ background: #2f3033; width: 3.52rem; height: 0.56rem; color: #fff; font-size: 0.16rem; border-radius:50px; border: none;  position: absolute; left: 0.1rem; top:0.13rem; z-index: 1; text-indent: 0.6rem;}
+.search_btn{ border: none; padding:0; margin: 0px; width: 0.36rem; height: 0.37rem; position: absolute; left: 0.23rem; top: 0.25rem; background:url(../img/search_btn.png) no-repeat 0 0; background-size: 100%; z-index: 2;}
+
+.am-menu-offcanvas1 .am-menu-nav{ padding-bottom: 0.15rem; width: 100%;}
+.am-menu-offcanvas1 .am-menu-nav li { width: 3.43rem; height: 0.86rem; margin-top: 0.15rem; margin-left: 0.15rem; display: block; position: relative;}
+.am-menu-offcanvas1 .am-menu-nav>li>a{ width: 100%; height: 100%; display: block;}
+.am-menu-offcanvas1 .am-menu-nav li a img{ width: 100%; position: absolute; left: 0; top: 0;}
+
+.index_bar{ width: 6.14rem; height: 4.2rem; background:url(../img/index_bar1.png) no-repeat 0 0; background-size: 100% 100%; margin: 0.1rem 0 0 0.13rem; }
+.index_wrap{width: 6.14rem; height:3.22rem; margin: 0.1rem 0 0 0.13rem;  }
+.index_wrap .span1{ width:3.22rem; }
+.index_wrap .span2{ width:2.75rem;}
+.index_wrap .img1{ margin-bottom: 0.18rem;}
+.index_wrap img{ width: 100%; vertical-align: top; float: left;}
+.index_wrap .span2 img{ height: 1.52rem;}
+
+
+
+ #wrapper {
+ 	position: relative;
+	z-index: 1;
+	width:6.14rem;
+	height: 1.3rem;
+	overflow: hidden;
+	margin: 0.1rem 0 0 0.13rem;
+	background: none;
+}
+
+#scroller {
+	position: absolute;
+	height: 1.3rem;
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#scroller li {
+	display: block;
+	float: left;
+	width: 2.15rem;
+	height:1.3rem;
+	padding-right: 0.15rem;
+}
+#scroller li a{ display: block; width: 100%; height: 100%; position: relative;}
+#scroller li img{ width: 100%; height: 100%; position: absolute; left: 0 ; top: 0;}
