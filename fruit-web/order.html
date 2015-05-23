@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="css/amazeui.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-default">
+		<h2 class="head_h2">确认订单</h2>
+</header>
+
+<!-- Menu -->
+<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript:history.go(-1);" class="btn_back">
+       
+    </a>
+    <i class="tanhao"></i>
+</nav>
+
+<div id="wrapper2">
+	<div id="scroller2">
+		<ul>
+			<li class="hover">
+				<p class="title">广州市 天河区 天河路 490号壬丰大厦1402</p>
+				<p class="name">李小米 收</p>
+				<div class="has"> </div>
+			</li>
+			<li>
+				<p class="title">广州市 天河区 天河路 490号壬丰大厦1402</p>
+				<p class="name">李小米 收</p>
+				<div class="has"> </div>
+			</li>
+			<li>
+				<p class="title">广州市 天河区 天河路 490号壬丰大厦1402</p>
+				<p class="name">李小米 收</p>
+				<div class="has"> </div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<h2 class="pay_h2">支付方式</h2>
+<ul class="order_pay">
+	<li class="online"><div class="has"> </div></li>
+	<li class="ali"><div class="has"> </div></li>
+	<li class="huo"><div class="has"> </div></li>
+</ul>
+
+<div class="order_total">
+	<div id="wrapper3">
+		<div id="scroller3">
+			 <ul>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 	<li><img src="img/prod1.png"><div class="has">3</div></li>
+			 </ul>
+		</div>
+	</div>
+	<h3>共<span>18</span>件商品<a>编辑</a></h3>
+</div>
+
+<div class="fapiao">
+	 <div class="left">发票填写</div>
+	 <div class="right">></div>
+</div>
+
+<div class="order_buy">
+	<div class="title">总计</div>
+	<div class="num">￥689</div>
+	<button class="am-btn am-btn-danger btn" data-am-modal="{target: '#my-popup'}">确认提交</button>
+</div>
+
+
+
+<div class="am-popup buy_detail" id="my-popup">
+  <div class="am-popup-inner">
+    <div class="am-popup-hd">
+      <img class="logo" src="img/logo.png">
+      <span data-am-modal-close class="am-close">&times;</span>
+    </div>
+    <div class="am-popup-bd">
+      			 <h2>恭喜您,订单提交成功!</h2>
+		     	<h3>订单号:SG121489358308</h3>
+		     	<div class="num">
+		     		<p class="all">总计</p>
+		     		<p class="int">￥689</p>
+		     	</div>
+		     	<div class="tips">
+			     	<p>付款方式:  货到付款</p>
+					<p>下单时间:  2015-01-20  11:28:45</p>
+					<p>收货时间:  2015-01-20  11:20:00</p>
+		     	</div>
+		     	<h4>我们用时间丈量新鲜,最新鲜的食材你值得拥有!</h4>
+		     	<a class="back"  data-am-modal-close class="am-close">再去逛逛</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+window.onload=function(){ 
+		var width=$('#scroller2 li').outerWidth()+(parseInt($('html').css('font-size'))*0.17);
+		var length=$('#scroller2 li').length;
+		$('#scroller2').width(width*length);
+		var myScroll = new IScroll('#wrapper2', { scrollX: true, scrollY: false, mouseWheel: true });
+
+		var width=$('#scroller3 li').outerWidth()+(parseInt($('html').css('font-size'))*0.17);
+		var length=$('#scroller3 li').length;
+		$('#scroller3').width(width*length);
+		var myScroll = new IScroll('#wrapper3', { scrollX: true, scrollY: false, mouseWheel: true });
+}
+
+$(function(){ 
+	$('#wrapper2 li,.order_pay li').on('click',function(){  
+		$(this).addClass('hover').siblings().removeClass('hover')
+	})
+})
+</script>
+
+</body>
+</html>

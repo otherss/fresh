@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="css/amazeui.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-default">
+		<h2 class="head_h2">产品详情</h2>
+</header>
+
+<!-- Menu -->
+<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript:history.go(-1);" class="btn_back">
+       
+    </a>
+</nav>
+
+<div class="detail_img">
+	<div class="detail_pic">
+		<img src="img/big_pic.png">
+	</div>
+	<div class="detail_info">
+		<h2>以色列西红柿</h2>
+		<h3>1KG</h3>
+		<p class="info">果面光滑,光泽度佳,心室小,肉质而多汁,味道酸甜适中,营养价值丰富.由鲜八度专机空运送达,保证新鲜.健康,便捷.</p>
+		<div class="star"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"></div>
+		<p class="num">原价￥69.9</p>
+		<p class="price">￥32</p>
+	</div>
+</div>
+
+<div class="detail_main">
+	<h4 class="detail_h4"><span>产品描述</span> <div class="line"></div></h4>
+	<div class="detail_text">
+		<div class="detail_tl">
+			<table>
+				<tr>
+					<th>产地</th>
+					<td>以色列</td>
+				</tr>
+				<tr>
+					<th>规格</th>
+					<td>1kg(约6个)</td>
+				</tr>
+				<tr>
+					<th>保质期</th>
+					<td>购买后一周内食用</td>
+				</tr>
+				<tr>
+					<th>有机</th>
+					<td>有机</td>
+				</tr>
+				<tr>
+					<th>产品编号</th>
+					<td>GZ98659005488</td>
+				</tr>
+				<tr>
+					<th>国际条码</th>
+					<td>FFT7909865207</td>
+				</tr>
+			</table>
+		</div>
+		<div class="detail_tr">
+			 <img src="img/big_pic2.png">
+		</div>
+	</div>
+
+	<h4 class="detail_h4"><span>产品图片</span> <div class="line"></div></h4>
+
+	<div class="big_pic"><img src="img/big_pic3.png"></div>
+</div>
+
+<div class="detail_car">
+	<div class="add_ui">
+		<a class="dec"></a>
+		<input type="text" id="value" value="0">
+		<a class="add"></a>
+		
+	</div>
+	<a class="add_car">加入购物车</a>
+	<a class="buy_now">立即购买</a>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+	$(function(){ 
+
+		$('.add_ui .add').on('click',function(){ 
+
+			var value=parseInt($('#value').val());
+			$('#value').val(value+1)
+		})
+		$('.add_ui .dec').on('click',function(){ 
+			var value=parseInt($('#value').val());
+			if(value==0){ 
+				$('#value').val(0);
+			}else{ 
+				$('#value').val(value-1);
+			}
+			
+			
+
+		})
+
+	})
+</script>
+
+</body>
+</html>
